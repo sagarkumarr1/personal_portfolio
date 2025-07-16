@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagar Kumar - Portfolio</title>
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" href="img/log.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="logo"><img src="img/logo.png" height="40" alt="Logo" /></div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="contact-btn">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="hero-section">
+    <section class="hero-left">
+      <h2>Hi, I am</h2>
+      <h1>Sagar Kumar</h1>
+      <p class="role">Full Stack Developer</p>
+      <div class="social-icons">
+        <a href="mailto:sagarkumar844122@email.com"><img src="img/email.png" height="50" alt="Email" /></a>
+        <a href="https://github.com/sagarkumarr1" target="_blank"><img src="img/github.png" height="50" alt="GitHub" /></a>
+        <a href="https://linkedin.com/in/sagarkumar" target="_blank"><img src="img/link.png" height="50" alt="LinkedIn" /></a>
+      </div>
+    </section>
+    <section class="hero-right">
+      <img src="img/ss.png" height="700" alt="Sagar Photo" class="hero-image" />
+    </section>
+  </main>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about" data-aos="fade-up">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/profile.png" alt="Profile" />
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I’m <strong>Sagar Kumar</strong>, a Full Stack Developer passionate about building modern web applications that are clean, fast, and user-friendly.</p>
+        <ul class="about-details">
+          <li><strong>Name:</strong> Sagar Kumar</li>
+          <li><strong>Location:</strong> Kolkata, India</li>
+          <li><strong>Email:</strong> sagarkumar844122@gmail.com</li>
+          <li><strong>Languages:</strong> Hindi, English</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section" id="skills" data-aos="fade-up">
+    <div class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">MongoDB</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">Responsive Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+<section class="projects-section" id="projects" data-aos="fade-up">
+  <div class="projects-container">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      
+      <!-- Project 1 -->
+      <a href="https://youtube.com" target="_blank" class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio showcasing my skills and work, built with HTML, CSS, and JavaScript.</p>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="https://your-todo-app-link.com" target="_blank" class="project-card">
+        <h3>ToDo App</h3>
+        <p>A simple and elegant to-do app using React and Firebase for real-time data.</p>
+      </a>
+
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact" data-aos="fade-up">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- JS: MOBILE MENU TOGGLE -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    </script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</body>
+</html>
